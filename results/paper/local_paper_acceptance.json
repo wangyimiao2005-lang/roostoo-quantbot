@@ -1,0 +1,21 @@
+{
+  "scheduled_rebalances": 10,
+  "completed_rebalances": 10,
+  "start_equity": 100000.0,
+  "end_equity": 102902.33401367394,
+  "minimum_free_cash": 1.000000000005457,
+  "maximum_locked_short_collateral": 103135.90476619058,
+  "maximum_gross_exposure": 0.9999899996510856,
+  "maximum_asset_exposure": 0.3174756715651094,
+  "action_counts": {
+    "BUY_LONG": 17,
+    "SELL_LONG": 16,
+    "OPEN_SHORT": 18,
+    "CLOSE_SHORT": 9
+  },
+  "direction_crossings": 14,
+  "total_fees": 719.441832854404,
+  "reconciliation_failures": 0,
+  "uncaught_exceptions": 0,
+  "order_count": 60
+}

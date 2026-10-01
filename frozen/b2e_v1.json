@@ -1,0 +1,82 @@
+{
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP"
+  ],
+  "baseline_strategy": {
+    "ema_fast": 8,
+    "ema_slow": 24,
+    "max_asset_abs_weight": 0.35,
+    "max_gross": 1.0,
+    "next_bar_execution": true,
+    "rebalance_hours": 24,
+    "target_volatility": 0.35,
+    "volatility_floor": 0.05,
+    "volatility_window_hours": 48
+  },
+  "controls": {
+    "constant_risk_multiplier": 0.7775497273015051,
+    "vol_only_parameters": {
+      "annualization_hours": 8760,
+      "k": 0.40283666199416146,
+      "market_volatility_window_hours": 48
+    }
+  },
+  "created_before_final_holdout": true,
+  "development_period": {
+    "end": "2025-12-31T23:00:00Z",
+    "start": "2025-01-01T00:00:00Z"
+  },
+  "feature_definition": {
+    "signal_dispersion": "std(raw_signal_i, ddof=0)",
+    "signal_strength": "mean(abs(raw_signal_i))"
+  },
+  "final_holdout": {
+    "end": "2026-10-03T23:00:00Z",
+    "release": "2026-10-04T00:00:00Z",
+    "start": "2026-09-22T00:00:00Z"
+  },
+  "metrics": {
+    "hours_per_year": 8760,
+    "note": "Reporting annualization only; does not affect trades."
+  },
+  "normalization": {
+    "signal_dispersion_mean": 0.12288766204098177,
+    "signal_dispersion_std": 0.07832940530864453,
+    "signal_strength_mean": 0.27771504862335994,
+    "signal_strength_std": 0.11211552554818305
+  },
+  "primary_cost_bps": 10,
+  "risk_model": {
+    "beta_dispersion": -0.0018338145465563657,
+    "beta_strength": 0.006841290631899482,
+    "intercept": 0.01663969115222859
+  },
+  "risk_multipliers": {
+    "high": 0.5,
+    "low": 1.0,
+    "medium": 0.75
+  },
+  "risk_thresholds": {
+    "q50": 0.015435113699219554,
+    "q75": 0.02181284722052758,
+    "severe_drawdown_threshold": 0.02156275758948012
+  },
+  "status": "FROZEN",
+  "strategy_id": "B2E_v1",
+  "stress_cost_bps": [
+    5,
+    15,
+    20
+  ],
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT"
+  ]
+}

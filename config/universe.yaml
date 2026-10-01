@@ -1,0 +1,3 @@
+symbols: [BTCUSDT, ETHUSDT, SOLUSDT, BNBUSDT, XRPUSDT]
+intervals: [15m, 1h, 4h]
+minimum_history_bars: 500

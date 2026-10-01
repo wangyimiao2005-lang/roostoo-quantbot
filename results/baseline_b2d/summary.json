@@ -1,0 +1,38 @@
+{
+  "design": {
+    "development": "2025",
+    "frozen_oos": "2026-01-01 through 2026-08-31",
+    "risk_controls": [
+      "market_vol_48h",
+      "corr_720h",
+      "gross_exposure",
+      "current_drawdown"
+    ],
+    "signal_geometry_controls": [
+      "raw_signal_strength",
+      "signal_dispersion"
+    ],
+    "all_standardization_fit_on_development_only": true,
+    "all_predictive_coefficients_fit_on_development_only": true
+  },
+  "24h_result": {
+    "agreement_independent_of_vol_corr_gross_current_drawdown": true,
+    "agreement_independent_of_raw_signal_strength_and_dispersion": false,
+    "risk_plus_agreement_dev_coef_per_sd": 0.0024883508700058008,
+    "risk_plus_agreement_dev_p": 0.00441826640153097,
+    "risk_plus_agreement_oos_coef_per_sd": 0.004571640456507231,
+    "risk_plus_agreement_oos_p": 3.540177340203068e-05,
+    "full_dev_coef_per_sd": 0.0006056088134559684,
+    "full_dev_p": 0.3190579399818195,
+    "full_oos_coef_per_sd": -0.0010074845907111574,
+    "full_oos_p": 0.6356573533936062,
+    "risk_plus_agreement_mse_improvement_pct": 8.596164037859088,
+    "risk_plus_signal_mse_improvement_pct": 15.076932007440401,
+    "agreement_on_top_of_signal_mse_improvement_pct": 0.014969958689181606
+  },
+  "interpretation": {
+    "disagreement_is_more_than_volatility_correlation_proxy": true,
+    "disagreement_has_unique_information_beyond_simple_raw_signal_geometry": false,
+    "recommendation": "DO NOT DEPLOY PCA DISAGREEMENT OVERLAY; TEST A SIMPLER RAW-SIGNAL-GEOMETRY RISK OVERLAY NEXT"
+  }
+}

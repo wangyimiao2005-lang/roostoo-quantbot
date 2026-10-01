@@ -1,0 +1,5 @@
+model,params,sample,validation_mean_ic,portfolio_rule
+ridge,"{""alpha"": 1.0}",2025 validation only,0.004956999522216907,top3/bottom3 daily; gate=0 development median spread
+ridge,"{""alpha"": 10.0}",2025 validation only,0.0025680840898232153,top3/bottom3 daily; gate=0 development median spread
+tree,"{""iterations"": 30, ""learning_rate"": 0.05, ""max_features"": 12}",2025 validation only,-0.03356431979373385,top3/bottom3 daily; gate=0 development median spread
+tree,"{""iterations"": 50, ""learning_rate"": 0.05, ""max_features"": 16}",2025 validation only,-0.02810077862502479,top3/bottom3 daily; gate=0 development median spread

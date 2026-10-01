@@ -1,0 +1,13 @@
+{
+  "oos_start": "2026-01-01 00:00:00+00:00",
+  "oos_end_exclusive": "2026-09-01 00:00:00+00:00",
+  "total_asset_orders": 1215,
+  "calendar_days": 243,
+  "active_days": 243,
+  "min_14d_active_days": 14,
+  "median_14d_active_days": 14.0,
+  "share_14d_windows_meeting_8_day_rule": 1.0,
+  "min_14d_asset_orders": 70,
+  "median_14d_asset_orders": 70.0,
+  "note": "Historical intended asset-order activity before live exchange MiniOrder/precision filtering; not a guarantee of future fills."
+}

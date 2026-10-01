@@ -1,0 +1,10 @@
+{
+  "rule": ">=95% coverage for mark,index,taker quote over exact requested history",
+  "eligible_assets": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT"
+  ]
+}

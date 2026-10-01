@@ -1,0 +1,2 @@
+phase,calibration,development_validation,historical_oos,sep_used,universe,selected_on_dev,note
+4B.1,2025_H1,2025_H2,2026-01-01..2026-08-31,False,"BTCUSDT,ETHUSDT,SOLUSDT,BNBUSDT,XRPUSDT,ADAUSDT,DOGEUSDT,AVAXUSDT,LINKUSDT,LTCUSDT,TRXUSDT,UNIUSDT,NEARUSDT",FLOW,"2026 had been inspected in earlier Phase 4B, so this is decomposition/stability evidence, not a pristine new holdout."

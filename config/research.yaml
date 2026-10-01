@@ -1,0 +1,16 @@
+initial_capital: 100000
+annualization_bars: 8760
+execution: next_bar_open
+target_volatility: 0.35
+volatility_floor: 0.05
+max_asset_weight: 0.35
+max_gross_exposure: 1.0
+no_trade_buffer: 0.02
+train_days: 30
+test_days: 7
+top_k: 3
+minimum_train_trades: 8
+minimum_oos_trades: 4
+cost_scenarios_bps: [5, 10, 15, 20]
+primary_cost_bps: 10
+rolling_window_days: 14

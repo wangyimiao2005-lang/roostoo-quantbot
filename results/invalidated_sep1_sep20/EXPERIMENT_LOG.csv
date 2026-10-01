@@ -1,0 +1,2 @@
+experiment_id,execution_timestamp,git_commit,data_range,data_last_timestamp,strategy_versions,cost_bps_per_side,artifacts
+B2E_final_untouched_holdout,2026-09-20T15:50:53.376065+00:00,unavailable (copied holdout is not a git worktree),2026-09-01 00:00:00+00:00 to 2026-09-20 15:00:00+00:00,2026-09-20 14:00:00+00:00,Frozen Baseline A / ConstantRisk_A / VolOnly_A / B2E_v1,10,PRIMARY_RESULTS.csv; COST_STRESS.csv; DAILY_EQUITY.csv; ROLLING_14D.csv; RISK_STATES.csv; RISK_BUCKETS.csv; TARGETS.csv; TRADES.csv

@@ -1,0 +1,66 @@
+{
+  "baseline_a_reproduced": {
+    "net_return": 0.19912817644575997,
+    "sharpe": 0.813521730842875,
+    "sortino": 1.3243488847463565,
+    "max_drawdown": 0.3166098315775824
+  },
+  "frozen_model": {
+    "intercept": 0.016639691152228516,
+    "beta_strength": 0.006841290631899667,
+    "beta_dispersion": -0.0018338145465560155,
+    "q50": 0.015435113699220016,
+    "q75": 0.02181284722052741,
+    "constant_scale": 0.7775497273015037,
+    "vol_k": 0.40283666199416124
+  },
+  "risk_prediction": {
+    "sample": "OOS_2026",
+    "n": 242,
+    "pearson": 0.5493803073474457,
+    "spearman": 0.594653098739607,
+    "mse": 0.00011143444355378153,
+    "oos_r2": 0.27772672823835853,
+    "severe_threshold_from_dev": 0.02156275758948012,
+    "severe_drawdown_auc": 0.7489268243985225
+  },
+  "bootstrap_high_minus_low_dd": {
+    "method": "circular moving-block bootstrap, 5 daily observations/block, 10,000 draws",
+    "high_n": 70,
+    "low_n": 109,
+    "difference": 0.013654325264281942,
+    "ci_2_5": 0.010047474417985926,
+    "ci_97_5": 0.017794713076268853
+  },
+  "development_average_gross_exposure": {
+    "A": 0.7778234593948166,
+    "ConstantRisk_A": 0.6047964187411519,
+    "VolOnly_A": 0.6228918695642374,
+    "B2E_SignalGeometry": 0.6047964187411519
+  },
+  "tail_beats_matched_controls": true,
+  "oos_risk_comparable_to_both_controls": false,
+  "upside_capture": {
+    "A": {
+      "mean_top_quartile_A_period_return": 0.11670969284559332,
+      "upside_capture_ratio": 1.0,
+      "downside_capture_ratio": 1.0
+    },
+    "ConstantRisk_A": {
+      "mean_top_quartile_A_period_return": 0.09018516129069361,
+      "upside_capture_ratio": 0.7727306883585786,
+      "downside_capture_ratio": 0.7767413893173606
+    },
+    "VolOnly_A": {
+      "mean_top_quartile_A_period_return": 0.08666170774445127,
+      "upside_capture_ratio": 0.742540791869828,
+      "downside_capture_ratio": 0.8737396768376436
+    },
+    "B2E_SignalGeometry": {
+      "mean_top_quartile_A_period_return": 0.08658051192291094,
+      "upside_capture_ratio": 0.741845084259255,
+      "downside_capture_ratio": 0.6398018349965279
+    }
+  },
+  "decision": "KEEP B2E AS RESEARCH-ONLY RISK SIGNAL"
+}

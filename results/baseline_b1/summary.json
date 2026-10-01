@@ -1,0 +1,89 @@
+{
+  "baseline_a": {
+    "gross_return": 0.489493208275795,
+    "net_return": 0.19715754048380618,
+    "sharpe": 0.8051265249119419,
+    "sortino": 1.3106607126777767,
+    "calmar": 0.980232851910393,
+    "max_drawdown": 0.31660983157759315,
+    "annualized_volatility": 0.3854690518165664,
+    "turnover": 218.39433172061695,
+    "annualized_turnover": 328.0408686338485,
+    "trade_count": 1215,
+    "trades_per_day": 5.0,
+    "fees": 0.21839433172061695,
+    "fees_pct_gross_pnl": 0.48775453061752067,
+    "break_even_cost_bps": 22.413274393127747
+  },
+  "baseline_b1": {
+    "gross_return": 0.15197914038021132,
+    "net_return": -0.12094867814821442,
+    "sharpe": -0.4218376712393057,
+    "sortino": -0.6745708050669167,
+    "calmar": -0.40729740748613563,
+    "max_drawdown": 0.43221478190262463,
+    "annualized_volatility": 0.4173168309718319,
+    "turnover": 270.18561525902624,
+    "annualized_turnover": 405.83436036849616,
+    "trade_count": 3159,
+    "trades_per_day": 13.0,
+    "fees": 0.2701856152590262,
+    "fees_pct_gross_pnl": 1.3561477329670026,
+    "break_even_cost_bps": 5.624990073380084
+  },
+  "rolling_14d": {
+    "A": {
+      "windows": 5497,
+      "mean_14d_return": 0.011188274817848455,
+      "median_14d_return": -0.011783098558370009,
+      "positive_14d_pct": 0.4309623430962343,
+      "p25_14d_return": -0.038933279026630685,
+      "p10_14d_return": -0.05757632473088576,
+      "p5_14d_return": -0.07065504532949199,
+      "worst_14d_return": -0.12141006387639708,
+      "best_14d_return": 0.2626671511475309,
+      "median_14d_max_drawdown": -0.07140883483144711,
+      "worst_14d_max_drawdown": -0.12807162226396096,
+      "median_14d_turnover": 12.603700251686814,
+      "median_14d_fees": 0.012603700251686813
+    },
+    "B1": {
+      "windows": 5497,
+      "mean_14d_return": -0.005799021902381329,
+      "median_14d_return": -0.022879628584107636,
+      "positive_14d_pct": 0.3711115153720211,
+      "p25_14d_return": -0.06735072060890823,
+      "p10_14d_return": -0.09472259132081409,
+      "p5_14d_return": -0.11274779246815621,
+      "worst_14d_return": -0.15342147075019652,
+      "best_14d_return": 0.2767924285490859,
+      "median_14d_max_drawdown": -0.08392786151411258,
+      "worst_14d_max_drawdown": -0.16477053460402613,
+      "median_14d_turnover": 15.594862262679708,
+      "median_14d_fees": 0.015594862262679709
+    }
+  },
+  "concentration": {
+    "average_active_positions": 12.997770919067216,
+    "median_active_positions": 13.0,
+    "largest_average_asset_weight": 0.13716103582310146,
+    "top1_pnl_share": 0.27028900401157013,
+    "top3_pnl_share": 0.6822022322455173
+  },
+  "included": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "ADAUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "TRXUSDT",
+    "UNIUSDT",
+    "NEARUSDT"
+  ],
+  "decision": "REJECT B1"
+}

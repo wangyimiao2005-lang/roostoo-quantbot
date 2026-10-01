@@ -1,0 +1,3 @@
+# Per side, applied to absolute change in portfolio weight.
+commission_bps: 5
+slippage_bps: 5

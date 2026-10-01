@@ -1,0 +1,113 @@
+{
+  "metrics": {
+    "A": {
+      "gross_return": 0.489493208275795,
+      "net_return": 0.19715754048380618,
+      "sharpe": 0.8051265249119419,
+      "sortino": 1.3106607126777767,
+      "calmar": 0.980232851910393,
+      "max_drawdown": 0.31660983157759315,
+      "annualized_volatility": 0.3854690518165664,
+      "turnover": 218.39433172061695,
+      "annualized_turnover": 328.0408686338485,
+      "trade_count": 1215,
+      "trades_per_day": 5.0,
+      "fees": 0.21839433172061695,
+      "fees_pct_gross_pnl": 0.48775453061752067,
+      "break_even_cost_bps": 22.413274393127747
+    },
+    "B2A": {
+      "gross_return": 0.11139048724851319,
+      "net_return": -0.11862440494522075,
+      "sharpe": -1.3666948196314064,
+      "sortino": -2.207015414806432,
+      "calmar": -1.012431733430939,
+      "max_drawdown": 0.1706439937146882,
+      "annualized_volatility": 0.12641109915287038,
+      "turnover": 231.74346154755068,
+      "annualized_turnover": 348.092030719572,
+      "trade_count": 1215,
+      "trades_per_day": 5.0,
+      "fees": 0.23174346154755068,
+      "fees_pct_gross_pnl": 2.0917111569944455,
+      "break_even_cost_bps": 4.806629127944451
+    },
+    "B2B": {
+      "gross_return": 0.32182821713231347,
+      "net_return": 0.07896694631924484,
+      "sharpe": 0.49163835613498863,
+      "sortino": 0.7748462336511551,
+      "calmar": 0.6319198595567783,
+      "max_drawdown": 0.19137588584830645,
+      "annualized_volatility": 0.2459820748294323,
+      "turnover": 202.90918973039413,
+      "annualized_turnover": 304.78129321643564,
+      "trade_count": 1214,
+      "trades_per_day": 4.995884773662551,
+      "fees": 0.20290918973039412,
+      "fees_pct_gross_pnl": 0.6784988974602861,
+      "break_even_cost_bps": 15.86070190117694
+    }
+  },
+  "rolling_14d": {
+    "A": {
+      "windows": 5497,
+      "mean_14d_return": 0.011188274817848455,
+      "median_14d_return": -0.011783098558370009,
+      "positive_14d_pct": 0.4309623430962343,
+      "p25_14d_return": -0.038933279026630685,
+      "p10_14d_return": -0.05757632473088576,
+      "p5_14d_return": -0.07065504532949199,
+      "worst_14d_return": -0.12141006387639708,
+      "best_14d_return": 0.2626671511475309,
+      "median_14d_max_drawdown": -0.07140883483144711,
+      "worst_14d_max_drawdown": -0.12807162226396096,
+      "median_14d_turnover": 12.603700251686814,
+      "median_14d_fees": 0.012603700251686813
+    },
+    "B2A": {
+      "windows": 5497,
+      "mean_14d_return": -0.007695408490599932,
+      "median_14d_return": -0.0027075366120127287,
+      "positive_14d_pct": 0.4371475350191013,
+      "p25_14d_return": -0.01700347635942745,
+      "p10_14d_return": -0.0346873371429363,
+      "p5_14d_return": -0.08201473194854078,
+      "worst_14d_return": -0.10185235610883892,
+      "best_14d_return": 0.03715180976533006,
+      "median_14d_max_drawdown": -0.02657643791886033,
+      "worst_14d_max_drawdown": -0.10260335651209462,
+      "median_14d_turnover": 13.404386501021438,
+      "median_14d_fees": 0.013404386501021439
+    },
+    "B2B": {
+      "windows": 5497,
+      "mean_14d_return": 0.002557617473527632,
+      "median_14d_return": -0.0027020134424855513,
+      "positive_14d_pct": 0.46825541204293253,
+      "p25_14d_return": -0.0266870209807617,
+      "p10_14d_return": -0.046145304871026284,
+      "p5_14d_return": -0.056834692417655444,
+      "worst_14d_return": -0.08626744274033238,
+      "best_14d_return": 0.13473016954463501,
+      "median_14d_max_drawdown": -0.046139791075539005,
+      "worst_14d_max_drawdown": -0.0862743085514136,
+      "median_14d_turnover": 11.770897630995876,
+      "median_14d_fees": 0.011770897630995876
+    }
+  },
+  "pca_explained_variance": {
+    "mean": 0.852723531624289,
+    "median": 0.8641617566219547,
+    "min": 0.7540436075474867,
+    "max": 0.9029367234311003,
+    "p25": 0.8338158758021033,
+    "p75": 0.8752202792969378
+  },
+  "factor_beta": {
+    "A": -0.0001601043206444695,
+    "B2A": -7.23512252712591e-05,
+    "B2B": -0.00015185218333738126
+  },
+  "decision": "REJECT RESIDUAL TREND"
+}

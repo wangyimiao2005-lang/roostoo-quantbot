@@ -1,0 +1,14 @@
+{
+  "timestamps_compared": 60,
+  "max_ema8_error": 0.0,
+  "max_ema24_error": 0.0,
+  "max_rolling_std_error": 0.0,
+  "max_volatility_error": 0.0,
+  "max_signal_error": 0.0,
+  "max_target_error": 5.551115123125783e-17,
+  "signal_timestamp_mismatches": 0,
+  "execution_timestamp_mismatches": 0,
+  "rebalance_mismatches": 0,
+  "tolerance": 1e-10,
+  "pass": true
+}

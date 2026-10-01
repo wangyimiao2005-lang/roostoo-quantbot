@@ -1,0 +1,104 @@
+{
+  "cost_bps_per_side": 10,
+  "created_before_fresh_holdout_evaluation": true,
+  "execution": "next bar only",
+  "feature_correction": "return_minus_market = return_24h - equal_weight_market_return_24h",
+  "feature_list": [
+    "return_1h",
+    "return_4h",
+    "return_12h",
+    "return_24h",
+    "return_48h",
+    "return_72h",
+    "ema_gap_price",
+    "ema_gap_vol",
+    "trend_direction",
+    "trend_age",
+    "dist_24h_high",
+    "dist_24h_low",
+    "dist_72h_high",
+    "dist_72h_low",
+    "ma_24h_distance",
+    "ma_72h_distance",
+    "return_4h_minus_24h",
+    "zscore_24h",
+    "vol_12h",
+    "vol_24h",
+    "vol_48h",
+    "vol_168h",
+    "vol_ratio",
+    "atr_range",
+    "volume_change",
+    "volume_24h_7d",
+    "volume_zscore",
+    "dollar_volume",
+    "volume_cs_rank",
+    "cs_rank_return_1h",
+    "cs_rank_return_4h",
+    "cs_rank_return_12h",
+    "cs_rank_return_24h",
+    "cs_rank_return_48h",
+    "cs_rank_vol_24h",
+    "cs_rank_volume_accel",
+    "cs_rank_trend_strength",
+    "return_minus_market",
+    "return_minus_btc",
+    "market_return_4h",
+    "market_return_12h",
+    "market_return_24h",
+    "market_vol_24h",
+    "market_dispersion",
+    "btc_trend"
+  ],
+  "forecast_horizon_hours": 24,
+  "gates_development_only": {
+    "ridge": 0.008554861949190721,
+    "tree": 0.002734860395949787
+  },
+  "ml_filter": "retain above selected-model development p50; half size p33-p50; skip below p33",
+  "phase": "3A.1",
+  "portfolio": "top 3 long / bottom 3 short; equal weights; gross 1.0; asset 1/6 < 0.35; daily rebalance",
+  "ridge": {
+    "model": "ridge",
+    "params": {
+      "alpha": 1.0
+    },
+    "validation_mean_ic": 0.004419493549928336
+  },
+  "selected_model": {
+    "model": "ridge",
+    "params": {
+      "alpha": 1.0
+    },
+    "validation_mean_ic": 0.004419493549928336
+  },
+  "sha256": "b07b37d7c84c0f00a618c7e267687d5e9922ad9e91c00a800c2924f86d7ff216",
+  "signal_schedule": "00:00 UTC daily",
+  "training_sample": "2025-01-01 through 2025-12-31 UTC",
+  "tree": {
+    "model": "tree",
+    "params": {
+      "iterations": 50,
+      "learning_rate": 0.05,
+      "max_features": 16
+    },
+    "status": "EXPLORATORY_OOS_CHALLENGER",
+    "validation_mean_ic": -0.02810077862502479
+  },
+  "universe": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "ADAUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "TRXUSDT",
+    "UNIUSDT",
+    "NEARUSDT"
+  ],
+  "validation_sample": "2025-10-01 through 2025-12-31 UTC"
+}

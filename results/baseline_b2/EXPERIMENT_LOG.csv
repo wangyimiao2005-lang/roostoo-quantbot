@@ -1,0 +1,7 @@
+experiment_id,timestamp,pca_lookback_hours,strategy,cost_bps,purpose,result
+primary_720_A,2026-09-20T14:32:34.999965+00:00,720,A,10,primary frozen B2 comparison,net=19.7158%; sharpe=0.805
+primary_720_B2A,2026-09-20T14:32:34.999965+00:00,720,B2A,10,primary frozen B2 comparison,net=-11.8624%; sharpe=-1.367
+primary_720_B2B,2026-09-20T14:32:34.999965+00:00,720,B2B,10,primary frozen B2 comparison,net=7.8967%; sharpe=0.492
+robustness_360_B2A,2026-09-20T14:32:34.999965+00:00,360,B2A,10,predeclared PCA-window robustness,net=-10.2295%; sharpe=-1.206
+robustness_720_B2A,2026-09-20T14:32:34.999965+00:00,720,B2A,10,predeclared PCA-window robustness,net=-11.8624%; sharpe=-1.367
+robustness_1440_B2A,2026-09-20T14:32:34.999965+00:00,1440,B2A,10,predeclared PCA-window robustness,net=-10.8752%; sharpe=-1.211

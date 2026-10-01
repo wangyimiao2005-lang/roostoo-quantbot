@@ -1,0 +1,35 @@
+{
+  "b1_universe": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "ADAUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "TRXUSDT",
+    "UNIUSDT",
+    "NEARUSDT"
+  ],
+  "premium_flow_locally_available": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT"
+  ],
+  "missing_premium_flow_assets": [
+    "ADAUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "TRXUSDT",
+    "UNIUSDT",
+    "NEARUSDT"
+  ],
+  "rule": "asset included only when local mark/index/taker files all exist; no network fetch in Phase 4B.1"
+}

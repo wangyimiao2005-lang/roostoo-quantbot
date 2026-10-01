@@ -1,0 +1,2 @@
+experiment_id,timestamp,mapping,development,oos,result
+B2E_primary_preregistered,2026-09-20T15:23:57.977752+00:00,<=Q50:1.00; Q50-Q75:0.75; >Q75:0.50,2025,2026-01-01 to 2026-08-31,executed once; no OOS parameter tuning

@@ -1,0 +1,2 @@
+event,selected_model,tree_status,fresh_dates,universe,data_source
+freeze_created_before_fresh_evaluation,ridge,EXPLORATORY_OOS_CHALLENGER,2026-09-01 through 2026-09-20,all 13 B1 assets,"existing local raw + public Binance fetch for eight missing symbols, exactly Sep01-20"

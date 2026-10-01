@@ -1,0 +1,69 @@
+{
+  "gate_id": "funding_vs_baseline_final_precompetition_v1",
+  "status": "PREREGISTERED_AND_SEALED",
+  "created_before_holdout_release": true,
+  "release_time": "2026-10-04T00:00:00Z",
+  "official_holdout": {
+    "start": "2026-09-22T00:00:00Z",
+    "end_exclusive": "2026-10-04T00:00:00Z"
+  },
+  "universe": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT"
+  ],
+  "baseline": {
+    "strategy": "Trend 8/24 frozen Baseline A",
+    "ema_fast_hours": 8,
+    "ema_slow_hours": 24,
+    "volatility_window_hours": 48,
+    "target_volatility": 0.35,
+    "volatility_floor": 0.05,
+    "max_asset_abs_weight": 0.35,
+    "max_gross": 1.0,
+    "rebalance_hours": 24,
+    "signal_hour_utc": 0,
+    "execution_hour_utc": 1,
+    "next_bar_execution": true
+  },
+  "funding_challenger": {
+    "strategy_id": "funding_shadow_phase4b1_v1",
+    "feature": "causal hourly funding state rolling arithmetic mean",
+    "feature_hours": 72,
+    "funding_low": -6.162855555555555e-05,
+    "funding_high": 7.526801388888888e-05,
+    "rule": "Set long Trend target to zero when funding72 > high; set short Trend target to zero when funding72 < low; otherwise retain Trend target.",
+    "no_parameter_changes_after_holdout_reveal": true
+  },
+  "primary_cost_bps_per_side": 10,
+  "stress_cost_bps_per_side": 15,
+  "decision_rules": {
+    "funding_net_return_10bps_must_be_positive": true,
+    "funding_must_beat_baseline_at_10bps": true,
+    "funding_net_return_15bps_must_be_positive": true,
+    "funding_must_beat_baseline_at_15bps": true,
+    "max_drawdown_worsening_limit_percentage_points": 2.0,
+    "leave_one_asset_out_minimum_wins_out_of_5": 3,
+    "maximum_single_rebalance_block_share_of_positive_incremental_return": 0.8
+  },
+  "decision": {
+    "if_all_rules_pass": "FUNDING_FILTER",
+    "otherwise": "BASELINE_TREND824"
+  },
+  "output": "frozen/competition_strategy/ACTIVE_STRATEGY.json",
+  "notes": [
+    "The holdout is a one-shot final dress rehearsal, not a new research sample.",
+    "No threshold, feature, universe, cost, or decision-rule change is allowed after holdout release.",
+    "Warmup observations before 2026-09-22 may be loaded after release but never contribute to scored holdout PnL."
+  ],
+  "source_hashes": {
+    "frozen/funding_shadow/FUNDING_SHADOW_FREEZE_MANIFEST.json": "1fb05f6aa0d09e0261eeae339b4263d418752c7df91c2b5419bf5b70185b0883",
+    "frozen/b2e_v1.json": "a0d7d4b2b331926c1763effa8835749e56cb7a3dcd813cf71e5dc9acea41853c",
+    "src/quant_competition/live.py": "dbb16f975548a1bccfeb39bcd4447ec2651e9e5bc0c97b278b56869f84670937",
+    "src/quant_competition/funding_shadow.py": "55e07f30b753ec00cf61c951eb07520d27f4d0723cb5e388cc4544286813f21b",
+    "src/quant_competition/backtest/engine.py": "31fa900f965b258c621e2f589c3cb03347d28e52f2d8cd3d3954147307162784",
+    "src/quant_competition/portfolio/execution_policy.py": "60a053ce723b82170b092df62cb4e8365b8027972feea342923a711ad7dc6fc9"
+  }
+}

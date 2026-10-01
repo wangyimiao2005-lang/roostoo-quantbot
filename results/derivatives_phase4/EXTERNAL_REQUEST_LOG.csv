@@ -1,0 +1,14 @@
+provider,endpoint,symbol,start_time_utc,end_time_utc,rows,url_parameters
+Binance Futures,/fapi/v1/fundingRate,BTCUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,ETHUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,SOLUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,BNBUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,XRPUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,ADAUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,DOGEUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,AVAXUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,LINKUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,LTCUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,TRXUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,UNIUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z
+Binance Futures,/fapi/v1/fundingRate,NEARUSDT,2025-01-01 00:00:00+00:00,2026-09-20 23:59:59+00:00,1884,cached prior request; original cap 2026-09-20T23:59:59Z

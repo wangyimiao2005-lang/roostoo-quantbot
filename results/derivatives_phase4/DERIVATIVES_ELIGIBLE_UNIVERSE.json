@@ -1,0 +1,22 @@
+{
+  "rule": "funding coverage >=95% over 2025-01-01 through 2026-09-20; no long gaps",
+  "eligible_assets": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "ADAUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT",
+    "LINKUSDT",
+    "LTCUSDT",
+    "TRXUSDT",
+    "UNIUSDT",
+    "NEARUSDT"
+  ],
+  "required_variables": [
+    "funding_rate"
+  ],
+  "excluded_assets": []
+}

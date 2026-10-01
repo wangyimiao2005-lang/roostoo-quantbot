@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-01",
+  "base": "Roostoo_Quantbot_B2F_Final_Precompetition_Ready",
+  "strategy_retuned": false,
+  "tests": {
+    "passed": 105,
+    "failed": 0
+  },
+  "freeze_verification": "PASS",
+  "historical_active_day_diagnostic": {
+    "oos_calendar_days": 243,
+    "oos_active_days": 243,
+    "min_active_days_in_rolling_14d": 14,
+    "min_intended_asset_orders_in_rolling_14d": 70
+  },
+  "competition_activation": "BLOCKED_PENDING_AWS_DRY_RUN_AND_REPO",
+  "blocking_items": [
+    "Run assigned competition credentials read-only on organizer AWS Sydney instance",
+    "Run authenticated competition launcher DRY_RUN --once on AWS and inspect logs/state",
+    "Initialize/push open-source GitHub repository with traceable commit history",
+    "Confirm AWS process supervision/restart setup from organizer guide"
+  ],
+  "short_api_verification": {
+    "general_test_readonly": "PASS",
+    "v6_short_positions": "PASS",
+    "v6_short_open_minimum": "PASS",
+    "v6_short_close_full_quantity": "PASS",
+    "final_positions_empty": true,
+    "production_contract_integrated": true
+  }
+}

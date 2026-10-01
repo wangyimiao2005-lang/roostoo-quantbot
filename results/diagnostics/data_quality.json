@@ -1,0 +1,52 @@
+{
+  "BTCUSDT": {
+    "rows": 8760,
+    "duplicates": 0,
+    "missing_candles": 0,
+    "invalid_ohlc": 0,
+    "nonpositive_prices": 0,
+    "stale_sequences": 0,
+    "abnormal_gaps": 0,
+    "issues": []
+  },
+  "ETHUSDT": {
+    "rows": 8760,
+    "duplicates": 0,
+    "missing_candles": 0,
+    "invalid_ohlc": 0,
+    "nonpositive_prices": 0,
+    "stale_sequences": 0,
+    "abnormal_gaps": 0,
+    "issues": []
+  },
+  "SOLUSDT": {
+    "rows": 8760,
+    "duplicates": 0,
+    "missing_candles": 0,
+    "invalid_ohlc": 0,
+    "nonpositive_prices": 0,
+    "stale_sequences": 0,
+    "abnormal_gaps": 0,
+    "issues": []
+  },
+  "BNBUSDT": {
+    "rows": 8760,
+    "duplicates": 0,
+    "missing_candles": 0,
+    "invalid_ohlc": 0,
+    "nonpositive_prices": 0,
+    "stale_sequences": 0,
+    "abnormal_gaps": 0,
+    "issues": []
+  },
+  "XRPUSDT": {
+    "rows": 8760,
+    "duplicates": 0,
+    "missing_candles": 0,
+    "invalid_ohlc": 0,
+    "nonpositive_prices": 0,
+    "stale_sequences": 0,
+    "abnormal_gaps": 0,
+    "issues": []
+  }
+}

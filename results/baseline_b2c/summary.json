@@ -1,0 +1,196 @@
+{
+  "definition": {
+    "agreement_formula": "1 - abs(raw_signal - residual_signal) / 2",
+    "b2c_scaler": "baseline_A_target * per_asset_agreement",
+    "pca_lookback_hours": 720,
+    "dev_low_cut": 0.8256722630633616,
+    "dev_high_cut": 0.909410960693409,
+    "constant_risk_control_scale_from_dev": 0.8547089688052749
+  },
+  "continuous_diagnostics": [
+    {
+      "sample": "DEV_2025",
+      "n": 362,
+      "pearson_agreement_vs_24h": 0.051319954382516825,
+      "spearman_agreement_vs_24h": 0.041214210745776976,
+      "pearson_agreement_vs_3d": 0.06378150375043902,
+      "spearman_agreement_vs_3d": 0.12667308332843472,
+      "pearson_agreement_vs_7d": 0.027379515145663922,
+      "spearman_agreement_vs_7d": 0.05613368545454676
+    },
+    {
+      "sample": "OOS_2026",
+      "n": 236,
+      "pearson_agreement_vs_24h": -0.06673386460157006,
+      "spearman_agreement_vs_24h": -0.01606357872249129,
+      "pearson_agreement_vs_3d": -0.04901801526391457,
+      "spearman_agreement_vs_3d": -0.00699603317706455,
+      "pearson_agreement_vs_7d": -0.039540142593946656,
+      "spearman_agreement_vs_7d": -0.03921539985483893
+    }
+  ],
+  "high_low_bootstrap_24h": {
+    "DEV_2025": {
+      "high_n": 121,
+      "low_n": 121,
+      "mean_difference": 0.0024438893803541534,
+      "ci_2_5": -0.0027411220555956673,
+      "ci_97_5": 0.007577231492639496
+    },
+    "OOS_2026": {
+      "high_n": 73,
+      "low_n": 73,
+      "mean_difference": -0.0012962949926783826,
+      "ci_2_5": -0.008900188026073034,
+      "ci_97_5": 0.006231067456418264
+    }
+  },
+  "risk_diagnostics": [
+    {
+      "sample": "DEV_2025",
+      "n": 362,
+      "pearson_agreement_vs_max_drawdown_24h": 0.14833946168296935,
+      "spearman_agreement_vs_max_drawdown_24h": 0.4239916595575087,
+      "pearson_agreement_vs_max_drawdown_3d": 0.10020129711868737,
+      "spearman_agreement_vs_max_drawdown_3d": 0.25480215749835206,
+      "pearson_agreement_vs_max_drawdown_7d": 0.16549976181431006,
+      "spearman_agreement_vs_max_drawdown_7d": 0.1788211625294452
+    },
+    {
+      "sample": "OOS_2026",
+      "n": 236,
+      "pearson_agreement_vs_max_drawdown_24h": 0.49496460053807123,
+      "spearman_agreement_vs_max_drawdown_24h": 0.5508159604139373,
+      "pearson_agreement_vs_max_drawdown_3d": 0.2943549395148566,
+      "spearman_agreement_vs_max_drawdown_3d": 0.3017808282965555,
+      "pearson_agreement_vs_max_drawdown_7d": 0.12967891847333646,
+      "spearman_agreement_vs_max_drawdown_7d": 0.09588330417841358
+    }
+  ],
+  "high_low_drawdown_bootstrap_24h": {
+    "DEV_2025": {
+      "high_n": 121,
+      "low_n": 121,
+      "mean_difference": 0.013969886907371505,
+      "ci_2_5": 0.010506411728750118,
+      "ci_97_5": 0.017761736929851127
+    },
+    "OOS_2026": {
+      "high_n": 73,
+      "low_n": 73,
+      "mean_difference": 0.01511243909179373,
+      "ci_2_5": 0.011429582424932201,
+      "ci_97_5": 0.01907604649643252
+    }
+  },
+  "oos_metrics": {
+    "A": {
+      "gross_return": 0.4925222696844578,
+      "net_return": 0.1991281764457138,
+      "sharpe": 0.8135217308426788,
+      "sortino": 1.324348884746027,
+      "calmar": 0.9904701282810984,
+      "max_drawdown": 0.3166098315775915,
+      "annualized_volatility": 0.38547535807418704,
+      "turnover": 218.78152715340352,
+      "annualized_turnover": 328.6224584814497,
+      "trade_count": 1215,
+      "trades_per_day": 5.0,
+      "fees": 0.21878152715340352,
+      "fees_pct_gross_pnl": 0.4864100948600347,
+      "break_even_cost_bps": 22.512059226056817,
+      "mean_gross_exposure": 0.8227294871434057,
+      "median_gross_exposure": 0.9984494131701682
+    },
+    "B2C_DISAGREEMENT": {
+      "gross_return": 0.40069677137887627,
+      "net_return": 0.15763195058500123,
+      "sharpe": 0.7758894117871711,
+      "sortino": 1.2755593591184438,
+      "calmar": 0.9193031951138291,
+      "max_drawdown": 0.267495732735483,
+      "annualized_volatility": 0.31693908699774626,
+      "turnover": 190.52208620397315,
+      "annualized_turnover": 286.1751500594658,
+      "trade_count": 1215,
+      "trades_per_day": 5.0,
+      "fees": 0.19052208620397315,
+      "fees_pct_gross_pnl": 0.5145081122834207,
+      "break_even_cost_bps": 21.031512900288625,
+      "mean_gross_exposure": 0.697416534011118,
+      "median_gross_exposure": 0.7645080933930004
+    },
+    "CONTROL_CONSTANT_RISK": {
+      "gross_return": 0.41680179597776434,
+      "net_return": 0.17508612741524598,
+      "sharpe": 0.8323466980324025,
+      "sortino": 1.3549944389554605,
+      "calmar": 0.9938234516239823,
+      "max_drawdown": 0.27593697693113084,
+      "annualized_volatility": 0.32946924579943254,
+      "turnover": 186.99453346692877,
+      "annualized_turnover": 280.87656261493413,
+      "trade_count": 1215,
+      "trades_per_day": 5.0,
+      "fees": 0.18699453346692876,
+      "fees_pct_gross_pnl": 0.4864100948600347,
+      "break_even_cost_bps": 22.28951768001702,
+      "mean_gross_exposure": 0.7031942715620328,
+      "median_gross_exposure": 0.8533836683349062
+    }
+  },
+  "oos_rolling_14d": {
+    "A": {
+      "windows": 5497,
+      "mean_14d_return": 0.011188515601869894,
+      "median_14d_return": -0.011783098558370009,
+      "positive_14d_pct": 0.4309623430962343,
+      "p25_14d_return": -0.038933279026630685,
+      "p10_14d_return": -0.05757632473088576,
+      "p5_14d_return": -0.07065504532949199,
+      "worst_14d_return": -0.12141006387639708,
+      "best_14d_return": 0.2626671511475309,
+      "median_14d_max_drawdown": -0.07140883483144711,
+      "worst_14d_max_drawdown": -0.12807162226396096,
+      "median_14d_turnover": 12.603700251686812,
+      "median_14d_fees": 0.012603700251686813
+    },
+    "B2C_DISAGREEMENT": {
+      "windows": 5497,
+      "mean_14d_return": 0.008939679559732058,
+      "median_14d_return": -0.010946992124215349,
+      "positive_14d_pct": 0.41750045479352377,
+      "p25_14d_return": -0.033243021436084264,
+      "p10_14d_return": -0.047364347967276156,
+      "p5_14d_return": -0.056885984461005526,
+      "worst_14d_return": -0.09914064267677836,
+      "best_14d_return": 0.2185470809419383,
+      "median_14d_max_drawdown": -0.05911820751326935,
+      "worst_14d_max_drawdown": -0.10361776999995653,
+      "median_14d_turnover": 10.941769477070247,
+      "median_14d_fees": 0.010941769477070245
+    },
+    "CONTROL_CONSTANT_RISK": {
+      "windows": 5497,
+      "mean_14d_return": 0.009595342946802756,
+      "median_14d_return": -0.009803053533007478,
+      "positive_14d_pct": 0.43350918682917955,
+      "p25_14d_return": -0.033156221917776674,
+      "p10_14d_return": -0.049166598080677866,
+      "p5_14d_return": -0.060417604987420326,
+      "worst_14d_return": -0.10430097693869977,
+      "best_14d_return": 0.2211905278470625,
+      "median_14d_max_drawdown": -0.06118463224315995,
+      "worst_14d_max_drawdown": -0.11011680796223366,
+      "median_14d_turnover": 10.772495645250018,
+      "median_14d_fees": 0.01077249564525002
+    }
+  },
+  "disagreement_contains_timing_information_beyond_constant_derisking": false,
+  "interpretation": {
+    "return_predictor": false,
+    "risk_state_predictor": true,
+    "scaler_beats_constant_risk_control": false,
+    "recommendation": "KEEP DISAGREEMENT AS A RISK DIAGNOSTIC ONLY; DO NOT DEPLOY THE CURRENT B2C SCALER"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "strategy_id": "funding_shadow_phase4b1_v1",
+  "status": "EXPERIMENTAL_SHADOW_ONLY",
+  "real_order_routing": false,
+  "universe": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT"
+  ],
+  "trend_definition": {
+    "name": "MultiHorizonTrend",
+    "ema_fast_hours": 8,
+    "ema_slow_hours": 24
+  },
+  "position_sizing": {
+    "method": "risk_scale_targets_then_enforce_exposure_limits",
+    "target_volatility": 0.35,
+    "volatility_window_hours": 48,
+    "volatility_floor": 0.05,
+    "annualization_hours": 8760,
+    "maximum_scale": 3.0,
+    "maximum_absolute_asset_weight": 0.35,
+    "maximum_gross_weight": 1.0
+  },
+  "funding_feature": {
+    "definition": "causal hourly funding state rolling arithmetic mean",
+    "hours": 72,
+    "no_backward_fill": true
+  },
+  "funding_thresholds": {
+    "low": -6.162855555555555e-05,
+    "high": 7.526801388888888e-05,
+    "calibration_period": "2025-01-01..2025-06-30 UTC",
+    "calibration_quantiles": [
+      0.1,
+      0.9
+    ]
+  },
+  "filtering_rule": "Set a positive Trend target to zero when funding72 > high; set a negative Trend target to zero when funding72 < low; otherwise retain the Trend target.",
+  "execution": {
+    "signal_bar": "completed 00:00 UTC hourly bar",
+    "effective_bar": "next 01:00 UTC hourly bar",
+    "same_bar_execution": false,
+    "rebalance_interval_hours": 24
+  },
+  "cost_assumptions": {
+    "primary_cost_bps_per_side": 10,
+    "stress_cost_bps_per_side": [
+      5,
+      15,
+      20
+    ]
+  },
+  "source_hashes": {
+    "five_asset_threshold_snapshot": {
+      "path": "results/derivatives_phase4b1/five_asset_baseline/PHASE4B1_THRESHOLDS.json",
+      "sha256": "7d7872a81865b4ab7c9fb26e3c598a4f40bcaa682f4502875779592cc99552ee"
+    },
+    "funding_hourly_causal": {
+      "path": "data/derivatives_processed/binance_futures_funding_hourly_causal.csv",
+      "sha256": "d82a0a50c084a440317c1483d47dfee46ee5d86a6a16f2b8bf27825627a8f73c"
+    },
+    "phase4b1_definition": {
+      "path": "research/derivatives_alpha_phase4b/phase4b1.py",
+      "sha256": "06a783bbed7849078f3dfd7048f2fe736f70151cec706038d50e12d1e8729e1f"
+    },
+    "frozen_baseline_a": {
+      "path": "frozen/b2e_v1.json",
+      "sha256": "a0d7d4b2b331926c1763effa8835749e56cb7a3dcd813cf71e5dc9acea41853c"
+    }
+  },
+  "forward_only": {
+    "sealed_final_holdout_start": "2026-09-22T00:00:00Z",
+    "sealed_final_holdout_end": "2026-10-03T23:00:00Z",
+    "data_access_not_before": "2026-10-04T00:00:00Z",
+    "first_execution_not_before": "2026-10-04T01:00:00Z",
+    "first_run_behavior": "arm at latest completed bar; never backfill pre-activation performance"
+  }
+}

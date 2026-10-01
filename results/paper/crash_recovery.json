@@ -1,0 +1,10 @@
+{
+  "crash_injected": true,
+  "state_after_crash": "EXECUTING_INCREASES",
+  "orders_after_crash": 1,
+  "recovery_status": "RECONCILED",
+  "orders_after_recovery": 5,
+  "duplicate_attempt_status": "ALREADY_DONE",
+  "orders_after_duplicate_attempt": 5,
+  "duplicate_orders_on_repeat": 0
+}

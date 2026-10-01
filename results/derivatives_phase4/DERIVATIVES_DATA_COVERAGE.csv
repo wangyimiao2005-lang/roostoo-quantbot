@@ -1,0 +1,53 @@
+asset,variable,first_timestamp,last_timestamp,expected_observations,actual_observations,coverage_pct,missing_pct,maximum_gap_hours,provider,usable,reason
+BTCUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+ETHUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+SOLUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+BNBUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+XRPUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+ADAUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+DOGEUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+AVAXUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+LINKUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+LTCUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+TRXUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+UNIUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+NEARUSDT,funding_rate,2025-01-01 01:00:00+00:00,2026-09-20 23:00:00+00:00,15072,15071,99.99336518046708,0.006634819532913561,0.0,Binance Futures,True,
+BTCUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+BTCUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+BTCUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+ETHUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+ETHUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+ETHUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+SOLUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+SOLUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+SOLUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+BNBUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+BNBUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+BNBUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+XRPUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+XRPUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+XRPUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+ADAUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+ADAUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+ADAUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+DOGEUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+DOGEUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+DOGEUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+AVAXUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+AVAXUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+AVAXUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+LINKUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+LINKUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+LINKUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+LTCUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+LTCUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+LTCUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+TRXUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+TRXUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+TRXUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+UNIUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+UNIUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+UNIUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
+NEARUSDT,open_interest,,,15072,0,0.0,100.0,,not used,False,Binance historical OI statistics endpoint documents latest one-month availability; insufficient 2025–2026 reproducible depth
+NEARUSDT,liquidations,,,15072,0,0.0,100.0,,not used,False,aggregate historical liquidation endpoint not provided by official exchange API with required depth
+NEARUSDT,basis,,,15072,0,0.0,100.0,,not used,False,not downloaded: funding-only feasibility path; mark/index archive not established
