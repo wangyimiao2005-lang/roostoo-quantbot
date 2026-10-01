@@ -1,0 +1,29 @@
+# Credentials and local Python environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python and operating-system caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+data/cache/
+
+# Local execution state and logs (research data/results remain versioned)
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.jsonl
+logs/
+runtime_logs/
+data/competition/
+data/binance_competition_live/
+data/funding_competition_live/
+state/
